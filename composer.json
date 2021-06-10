@@ -1,6 +1,6 @@
 {
     "name": "heimseiten/contao-show-only-self-created-members-if-not-admin-bundle",
-    "description": "For viewing purposes only. It do not hide members in the code.",
+    "description": "For viewing purposes only. It only adds a field admin_id and filters the memberlist with this id.",
     "keywords": [
         "Mitglieder",
         "anzeigen",
