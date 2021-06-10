@@ -1,0 +1,13 @@
+.tl_listing_container { display: none; }
+
+body.is_admin .tl_listing_container { display: block; }
+body.page_other .tl_listing_container { display: block; }
+body.page_member_filtered .tl_listing_container { display: block; }
+
+
+.tl_search.tl_subpanel { display: none; }
+body.is_admin .tl_search.tl_subpanel { display: block; }
+
+body.page_other .tl_search.tl_subpanel { display: block; }
+
+.widget.admin_id { display: none; }
