@@ -12,7 +12,7 @@ $GLOBALS['TL_DCA']['tl_member']['fields']['admin_id'] = [
 ];
 
 PaletteManipulator::create()
-    ->addField('admin_id', 'login_legend', PaletteManipulator::POSITION_APPEND)
+    ->addField('admin_id', 'personal_legend', PaletteManipulator::POSITION_APPEND)
     ->applyToPalette('default', 'tl_member') 
 ;
 
