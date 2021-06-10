@@ -46,6 +46,5 @@
     },
     "extra": {
         "contao-manager-plugin": "Heimseiten\\ContaoShowOnlySelfCreatedMembersIfNotAdminBundle\\ContaoManager\\Plugin"
-    },
-    "version": "0.0.1"
+    }
 }
