@@ -16,5 +16,5 @@ if (TL_MODE == 'BE') {
 
     $objUser = BackendUser::getInstance();
     $objUser->authenticate();
-    echo '<div class="admin_id" data-userid="' . $objUser->id . '" data-useradmin="isadmin' . $objUser->admin . '"></div>';
+    echo '<div class="user_id" data-userid="' . $objUser->id . '" data-useradmin="isadmin' . $objUser->admin . '"></div>';
 }
