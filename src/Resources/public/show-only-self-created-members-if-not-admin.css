@@ -10,5 +10,5 @@ body.is_admin .tl_search.tl_subpanel { display: block; }
 
 body.page_other .tl_search.tl_subpanel { display: block; }
 
-.widget.admin_id { display: none; }
-body.is_admin .widget.admin_id { display: block; }
+.widget.user_id { display: none; }
+body.is_admin .widget.user_id { display: block; }
