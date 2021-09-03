@@ -20,6 +20,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
         } else {
             document.querySelector('body').classList.add('page_other')
         }
+        
+        // Show only member groups named userid_1, userid_32 an so forth
+        document.querySelectorAll('#pal_amg_legend #ctrl_amg label').forEach(element => {
+            console.log('userid_' + document.querySelector('.user_id').getAttribute('data-userid'))
+            if ( element.innerHTML == 'userid_' + document.querySelector('.user_id').getAttribute('data-userid') ) {
+                element.style.display = 'inline-block'
+                element.previousElementSibling.style.display = 'inline-block'
+            }
+        })    
+
     }
 
 })  

@@ -12,3 +12,11 @@ body.page_other .tl_search.tl_subpanel { display: block; }
 
 .widget.user_id { display: none; }
 body.is_admin .widget.user_id { display: block; }
+
+/* Show only member groups named userid_1, userid_32 an so forth */
+body #pal_amg_legend #ctrl_amg br { display: none; }
+body.is_admin #pal_amg_legend #ctrl_amg br { display: initial; }
+body #pal_amg_legend #ctrl_amg input { display: none; }
+body.is_admin #pal_amg_legend #ctrl_amg input { display: initial; }
+body #pal_amg_legend #ctrl_amg label { display: none; }
+body.is_admin #pal_amg_legend #ctrl_amg label { display: initial; }
