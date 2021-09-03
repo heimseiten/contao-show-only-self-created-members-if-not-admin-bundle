@@ -11,7 +11,7 @@
  */
 
 if (TL_MODE == 'BE') {
-    $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaoshowonlyselfcreatedmembersifnotadmin/show-only-self-created-members-if-not-admin.css|static';
+    $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaoshowonlyselfcreatedmembersifnotadmin/show-only-self-created-members-if-not-admin.scss|static';
     $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/heimseitencontaoshowonlyselfcreatedmembersifnotadmin/show-only-self-created-members-if-not-admin.js';
 
     $objUser = BackendUser::getInstance();

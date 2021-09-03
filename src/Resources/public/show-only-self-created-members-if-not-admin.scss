@@ -20,3 +20,7 @@ body #pal_amg_legend #ctrl_amg input { display: none; }
 body.is_admin #pal_amg_legend #ctrl_amg input { display: initial; }
 body #pal_amg_legend #ctrl_amg label { display: none; }
 body.is_admin #pal_amg_legend #ctrl_amg label { display: initial; }
+
+form#tl_member #ctrl_groups .sortable span {
+    display: none;
+}
