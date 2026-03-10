@@ -1,16 +1,11 @@
 <?php
 
-/*
- * This file is part of show-only-self-created-members-if-not-admin.
- * 
- * (c) heimseiten.de - Webdesign aus Köln 2021 <info@heimseiten.de>
- * @license GPL-3.0-or-later
- * For the full copyright and license information,
- * please view the LICENSE file that was distributed with this source code.
- * @link https://github.com/heimseiten/contao-show-only-self-created-members-if-not-admin-bundle
- */
+use Contao\System;
+use Symfony\Component\HttpFoundation\Request;
 
-if (TL_MODE == 'BE') {
+if (System::getContainer()->get('contao.routing.scope_matcher')
+    ->isBackendRequest(System::getContainer()->get('request_stack')->getCurrentRequest() ?? Request::create(''))
+) {
     $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaoshowonlyselfcreatedmembersifnotadmin/show-only-self-created-members-if-not-admin.scss|static';
     $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/heimseitencontaoshowonlyselfcreatedmembersifnotadmin/show-only-self-created-members-if-not-admin.js';
 
