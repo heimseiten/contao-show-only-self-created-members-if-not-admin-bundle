@@ -21,7 +21,7 @@
         "source": "https://github.com/heimseiten/contao-show-only-self-created-members-if-not-admin-bundle"
     },
     "require": {
-        "contao/core-bundle": "^4.9"
+        "contao/core-bundle": "^5.3"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.3",
