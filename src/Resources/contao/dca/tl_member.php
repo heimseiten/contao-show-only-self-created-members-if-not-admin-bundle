@@ -19,8 +19,8 @@ PaletteManipulator::create()
 $GLOBALS['TL_DCA']['tl_member']['fields']['user_id']['save_callback'][] =
 function($varValue, DataContainer $dc) {
     if (empty($varValue)) {
-        $this->import('BackendUser', 'User');
-        return 'userid_' . $this->User->id;
+        $user = \Contao\BackendUser::getInstance();
+        return 'userid_' . $user->id;
     } else {
         return $varValue;
     }
